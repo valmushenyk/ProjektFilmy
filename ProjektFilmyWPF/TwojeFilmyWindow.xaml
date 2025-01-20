@@ -1,0 +1,18 @@
+﻿<Window x:Class="ProjektFilmyWPF.TwojeFilmyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektFilmyWPF"
+        mc:Ignorable="d"
+        Title="Konto Użytkownika" Height="450" Width="800">
+    <Grid Background="#FFE8E1FA">
+        <ListBox Name="ListBoxWypozyczone" Margin="40" Height="200" SelectionMode="Single" Background="#FFE1D3FF" />
+        <Button Content="Odśwież" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Width="100" Click="ButtonOdswiez_Click" Background="#FFC0AAF3"/>
+        <Button Content="Przedłuż" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="120,0,0,10" Width="100" Click="ButtonPrzedluz_Click" Background="#FFC0AAF3"/>
+        <Button Content="Oddaj" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="230,0,0,10" Width="100" Click="ButtonOddaj_Click" Background="#FFC0AAF3"/>
+        <TextBox x:Name="txtNazwaUzytkownika" TextAlignment="Center" HorizontalAlignment="Left" Margin="50,63,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Background="#FFD6CBF0"/>
+        <Button Content="Sprawdź termin zwrotu" Click="ButtonSprawdzTermin_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="341,0,0,10" Width="200" RenderTransformOrigin="0.52,0.55" Background="#FFC0AAF3"/>
+        <Button Content="Dostępne filmy" HorizontalAlignment="Right" Background="#FFE1D3FF" VerticalAlignment="Top" Width="150" Height="40"  Click="btnMovieList_Click" Margin="0,10,10,0" />
+    </Grid>
+</Window>

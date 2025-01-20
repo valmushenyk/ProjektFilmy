@@ -1,0 +1,21 @@
+﻿<Window x:Class="ProjektFilmyWPF.PrzegladajFilmyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektFilmyWPF"
+        mc:Ignorable="d"
+        Title="Przegladaj Filmy" Height="450" Width="800">
+    <Grid Background="#FFD2D5E8">
+        <Button x:Name="buttonWyszukaj" Content="Wyszukaj Film" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="ButtonWyszukaj_Click" Background="#FF98A3EE"/>
+        <Button x:Name="buttonWyswietl" Content="Wyświetl Wszystkie" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="ButtonWyswietlWszystkie_Click" Background="#FF98A3EE"/>
+
+        <Button Content="Losuj" HorizontalAlignment="Left" Margin="400,333,0,0" VerticalAlignment="Top" Width="100" Height ="24" Background="#FF929FF1" Click="ButtonLosuj_Click" RenderTransformOrigin="0.285,-1.665"/>
+        <ListBox Name="ListBoxFilmy" Margin="10,56,173,134" Background="#FFC3C9F0"  />
+        <TextBox Margin="10,333,0,0" TextWrapping="Wrap" Text="Nie masz pomysłu? Wylosuj sobie film na wieczór!" VerticalAlignment="Top" Height="24" TextAlignment="Center" Background="#FF929FF1" HorizontalAlignment="Left" FontWeight="Bold" FontFamily="Arial Nova"/>
+        <Button Content="Wypożycz" HorizontalAlignment="Left" Margin="650,0,0,315" VerticalAlignment="Bottom" Width="100" Height ="25" Background="#FF929FF1" Click="ButtonWypozycz_Click"/>
+
+        <Button Content="Odśwież" Click="ButtonOdswiez1_Click" HorizontalAlignment="Left" Margin="650,0,0,262" VerticalAlignment="Bottom" Width="100" Height ="25" Background="#FF929FF1" />
+        <Button Content="Konto Użytkownika" HorizontalAlignment="Right" Background="#FF929FF1" VerticalAlignment="Top" Width="150" Height="40"  Click="btnUserProfile_Click" Margin="0,10,10,0" />
+    </Grid>
+</Window>
